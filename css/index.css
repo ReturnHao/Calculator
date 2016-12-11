@@ -1,0 +1,109 @@
+body{
+    margin: 0; padding: 0;
+    background: url('../image/background.jpg') no-repeat;
+    -webkit-background-size: auto;
+    background-size: auto; overflow: hidden;
+}
+
+div{
+    font-family: "Arial, Helvetica";
+    margin: 0; padding: 0;
+}
+
+li:hover,.Calculator_background:hover {
+    box-shadow: 0 0 3px 3px rgba(135, 206, 250, 0.9) !important;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .31s;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#Calculator_wrapper{
+    position: relative;
+    margin: 30px auto;
+    width: 500px;
+    height: 500px;
+}
+
+#Calculator_container{
+    position: relative;
+    top: 50px;
+    width: 500px;
+    height: 500px;
+}
+
+.Calculator_background{
+    position: relative;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+    z-index: 20;
+    background: gray;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+    box-shadow: 0 0 10px rgba(153, 153, 153, 0.8), 0 0 10px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0 0 10px rgba(153, 153, 153, 0.8), 0 0 10px rgba(0, 0, 0, 0.5) inset;
+}
+
+#Screen_wrapper{
+    position: absolute;
+    top: 0;
+    width: 500px;
+    height: 105px;
+    z-index: 10;
+    background: gray;
+    opacity: 0.9;
+}
+
+#Screen_container{
+    margin-top: 35px;
+    text-decoration: none;
+    text-align: right;
+    font-family: "Microsoft YaHei";
+    font-size: 23px;
+    color: #ffffff;
+}
+.Button_line{
+    margin: 0; padding: 0;
+    position: relative;
+    top: -80px;
+}
+
+.Gray_button, .Special_button, .Num_button, .Mult_button, .Zero_button{
+    margin-right: 5px;
+    position: relative;
+    list-style: none;
+    bottom: 300px;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    color: #f0e5cb;
+    float: left;
+    z-index: 40;
+    cursor: wait;
+}
+
+.Mult_button{
+    font-size: 23px;
+}
+
+.Special_button{
+    font-size: 30px;
+}
+
+.Gray_button, .Num_button, .Zero_button{
+    font-size: 20px;
+}
+
+.Num_button, .Zero_button{
+    color: #f3edea;
+}
+
+.Zero_button{
+    width: 205px;
+}
